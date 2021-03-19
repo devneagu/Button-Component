@@ -1,11 +1,10 @@
 {
-  "name": "accmanager",
+  "name": "custombuttons",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html",
-    "dev:mock": "cross-env PET_MOCK=mock npm run dev",
+    "dev": "parcel src/index.html -d public --public-url ./",
     "format": "prettier \"src/**/*.{js,html}\" --write",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -26,7 +25,6 @@
     "prettier": "^2.2.1"
   },
   "dependencies": {
-    "@frontendmasters/pet": "^1.0.3",
     "@reach/router": "^1.3.4",
     "axios": "^0.21.1",
     "body-parser": "^1.19.0",
@@ -34,11 +32,6 @@
     "express": "^4.17.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0"
-  },
-  "proxy": {
-    "/api/currencies": {
-      "target": "http://localhost:5000/"
-    }
   },
   "browserslist": [
     "last 2 Chrome versions"
