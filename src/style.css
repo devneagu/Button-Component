@@ -1,0 +1,157 @@
+.customBtn {
+  padding: 15px 22px;
+  background: #e0e0e0;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  margin: 20px;
+  color: black;
+  font-family: system-ui;
+  font-weight: 600;
+  transition: 0.2s;
+}
+.customBtn.sm {
+  padding: 10px 10px;
+}
+.customBtn.md {
+  padding: 15px 20px;
+}
+.customBtn.lg {
+  padding: 20px 30px;
+}
+.customBtn.default {
+  background: #e0e0e0;
+  border: 2px solid #e0e0e0;
+  color: black;
+}
+
+.customBtn.primary {
+  border: 2px solid #2962ff;
+  background: #2962ff;
+  color: white;
+}
+.customBtn.primary:hover {
+  border: 2px solid #0039cb;
+  background: #0039cb;
+  color: white;
+}
+
+.customBtn.secondary {
+  border: 2px solid #455a64;
+  background: #455a64;
+  color: white;
+}
+.customBtn.secondary:hover {
+  border: 2px solid #1c313a;
+  background: #1c313a;
+  color: white;
+}
+
+.customBtn.danger {
+  border: 2px solid #d32f2f;
+  background: #d32f2f;
+  color: white;
+}
+.customBtn.danger:hover {
+  border: 2px solid #9a0007;
+  background: #9a0007;
+  color: white;
+}
+
+.customBtn:hover {
+  background: #aeaeae;
+  border: 2px solid #aeaeae;
+  -webkit-box-shadow: 0px 4px 6px -3px rgba(0, 0, 0, 0.62);
+  -moz-box-shadow: 0px 4px 6px -3px rgba(0, 0, 0, 0.62);
+  box-shadow: 0px 4px 6px -3px rgba(0, 0, 0, 0.62);
+}
+
+.outline {
+  background: white;
+  border: 2px solid #6d82fe;
+  color: #6d82fe;
+}
+
+.outline:hover {
+  background: #eaefff;
+  border: 2px solid #6d82fe;
+  color: #6d82fe;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.customBtn.text {
+  background: white;
+  border: 2px solid white;
+  color: #6d82fe;
+}
+
+.customBtn.text:hover {
+  background: #eaefff;
+  border: 2px solid #eaefff;
+  color: #6d82fe;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.customBtn.disableShadow:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.customBtn.disabled {
+  color: rgb(109, 109, 109);
+  background: #aeaeae;
+}
+
+.customBtn:disabled,
+.customBtn[disabled] {
+  border: 1px solid #cccccc;
+  background-color: #cccccc;
+  color: #797979;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  font-weight: 700;
+}
+
+.customBtn.outline:disabled,
+.customBtn.outline[disabled] {
+  border: 1px solid white;
+  background-color: white;
+  color: #797979;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  font-weight: 700;
+}
+
+.customBtn.text:disabled,
+.customBtn.text[disabled] {
+  border: 1px solid #797979;
+  background-color: white;
+  color: #797979;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  font-weight: 700;
+}
+
+*:focus {
+  outline: 0 !important;
+}
+
+/* demo */
+
+.codeText {
+  margin: 20px;
+  font-family: monospace;
+}
+.codeText::before {
+  content: "<";
+}
+.codeText::after {
+  content: ">";
+}

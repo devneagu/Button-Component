@@ -1,9 +1,21 @@
 import React, { useState } from "react";
 
-export default function FirstContainer({ text }) {
+export const Button = (props) => {
+  console.log(props);
+  let { text, variant, color, size, disabled, disableShadow } = props;
+
+  if (variant == undefined) variant = "";
+  if (color == undefined) color = "";
+  if (size == undefined) size = "";
+
   return (
     <div>
-      <button>{`${text}`}</button>
+      <button
+        className={`customBtn ${variant} ${color} ${size} ${
+          disableShadow ? "disableShadow" : ""
+        }`}
+        disabled={disabled}
+      >{`${text}`}</button>
     </div>
   );
-}
+};
