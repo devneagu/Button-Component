@@ -1,2 +1,1 @@
-# Button Component
- devchallenges.io Challenge
+# React Button Component
