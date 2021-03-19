@@ -1,0 +1,11 @@
+{
+  "root": "build/",
+  "routes": {
+    "/**": "localhos"
+  },
+  "proxies": {
+    "/api/": {
+      "origin": "http://localhost:5000"
+    }
+  }
+}
