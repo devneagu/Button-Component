@@ -1,7 +1,6 @@
 import React from "react";
 
 export const Button = (props) => {
-  console.log(props);
   let { text, variant, color, size, disabled, disableShadow } = props;
 
   if (variant == undefined) variant = "";
