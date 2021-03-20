@@ -12,7 +12,7 @@ const App = () => {
       <Button text="Default" variant="outline" disableShadow />
       <p className="codeText">Button text="Default" variant="text" /</p>
       <Button text="Default" variant="text" />
-      <p className="codeText">Button text="Default" option="disabled" /</p>
+      <p className="codeText">Button text="Default" disabled /</p>
       <Button text="Default" disabled />
       <p className="codeText">
         Button text="Default" variant="outline" disabled color="primary" /
